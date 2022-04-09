@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 70%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px 0 0 1px;
+  & > * {
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 1px 1px 0;
+  }
+}
+.col-100 {
+  flex: 0 1 100%;
+}
+.col-25 {
+  flex: 0 1 25%;
+}
+
+button {
+  padding: 20px 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    background-color: #b1b1b1;
+  }
+}
+
+.result {
+  font-size: 30px;
+  text-align: right;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+}
